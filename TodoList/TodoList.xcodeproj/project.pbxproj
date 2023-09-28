@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B2AEB8D2AC5A16E003A248E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2AEB8C2AC5A16E003A248E /* HeaderView.swift */; };
 		3BF040922AC56A6C0039C9DC /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF040912AC56A6C0039C9DC /* TodoListApp.swift */; };
 		3BF040942AC56A6C0039C9DC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF040932AC56A6C0039C9DC /* MainView.swift */; };
 		3BF040962AC56A6D0039C9DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF040952AC56A6D0039C9DC /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B2AEB8C2AC5A16E003A248E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		3BF0408E2AC56A6C0039C9DC /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF040912AC56A6C0039C9DC /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
 		3BF040932AC56A6C0039C9DC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				3BF040D02AC572340039C9DC /* ToDoListView.swift */,
 				3BF040D22AC572530039C9DC /* ToDoListItemView.swift */,
 				3BF040D42AC5725E0039C9DC /* NewItemView.swift */,
+				3B2AEB8C2AC5A16E003A248E /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BF040E62AC574340039C9DC /* ToDoListViewModel.swift in Sources */,
+				3B2AEB8D2AC5A16E003A248E /* HeaderView.swift in Sources */,
 				3BF040D52AC5725E0039C9DC /* NewItemView.swift in Sources */,
 				3BF040942AC56A6C0039C9DC /* MainView.swift in Sources */,
 				3BF040DB2AC573880039C9DC /* MainViewViewModel.swift in Sources */,
