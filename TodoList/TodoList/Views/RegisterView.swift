@@ -8,8 +8,39 @@
 import SwiftUI
 
 struct RegisterView: View {
+   
+    @State var email : String = ""
+    @State var password : String = ""
+    @State var phoneNumber : String = ""
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            HeaderView(title: "Register", subtitle: "Start organizing todos", backgroundColor: Color.green, degrees: -15)
+            
+            Form{
+                TextField("Email address",text:$email).textFieldStyle(RoundedBorderTextFieldStyle())
+                
+                TextField("Phone Number",text:$phoneNumber).textFieldStyle(RoundedBorderTextFieldStyle())
+                
+            SecureField("Password",text: $password)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                
+                Button{
+                    
+                } label: {
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 10)
+                            .foregroundColor(Color.blue)
+                        
+                        Text("Register").foregroundColor(Color.white).bold()
+                    }
+                }.padding()
+                
+            }
+            
+            Spacer()
+        }
     }
 }
 
