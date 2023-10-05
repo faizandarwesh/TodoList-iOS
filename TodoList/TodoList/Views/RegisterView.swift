@@ -9,33 +9,23 @@ import SwiftUI
 
 struct RegisterView: View {
    
-    @State var email : String = ""
-    @State var password : String = ""
-    @State var phoneNumber : String = ""
-    
+    @StateObject var viewModel = RegisterViewViewModel()
     
     var body: some View {
         VStack{
             HeaderView(title: "Register", subtitle: "Start organizing todos", backgroundColor: Color.green, degrees: -15)
             
             Form{
-                TextField("Email address",text:$email).textFieldStyle(RoundedBorderTextFieldStyle())
+                TextField("Full Name",text:$viewModel.fullName).textFieldStyle(RoundedBorderTextFieldStyle())
                 
-                TextField("Phone Number",text:$phoneNumber).textFieldStyle(RoundedBorderTextFieldStyle())
+                TextField("Email Address",text:$viewModel.email).textFieldStyle(RoundedBorderTextFieldStyle())
                 
-            SecureField("Password",text: $password)
+                SecureField("Password",text: $viewModel.password)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 
-                Button{
-                    
-                } label: {
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 10)
-                            .foregroundColor(Color.blue)
-                        
-                        Text("Register").foregroundColor(Color.white).bold()
-                    }
-                }.padding()
+                CustomButton(title: "Create Account",color: Color.primary){
+                    //attempt to register
+                }
                 
             }
             
